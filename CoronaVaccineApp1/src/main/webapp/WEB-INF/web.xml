@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+
+<welcome-file-list>
+<welcome-file>/File/Home.html</welcome-file>
+<welcome-file>/Home.asp</welcome-file>
+</welcome-file-list>
+
+<servlet>
+<servlet-name>Welcome</servlet-name>
+<jsp-file>/File/Home.html</jsp-file>
+</servlet>
+<servlet-mapping>
+<servlet-name>Welcome</servlet-name>
+<url-pattern>/Home.asp</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+
+ <!-- configuration of Servlet Name -->
+ <servlet>
+ <servlet-name>Vaccine</servlet-name>
+ <servlet-class>com.ab.servlet.CoronaVaccineCheckEligibilityApp</servlet-class>
+ </servlet>
+ 
+ <!-- Mapping Servlet -->
+ 
+ <servlet-mapping>
+ <servlet-name>Vaccine</servlet-name>
+ <url-pattern>/coronaurl</url-pattern>
+ </servlet-mapping>
+ </web-app>
