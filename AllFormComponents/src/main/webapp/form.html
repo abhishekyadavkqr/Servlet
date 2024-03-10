@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllFormsComponent</title>
+<style>
+   *{
+        text-align: center;
+        
+    }
+    .center{
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+</head>
+<body >
+    
+    <h1>Forms Component</h1>
+    <form action="proceed" method="post" style="background:cyan;">
+            <table  class ='center  '>
+                <tr>
+                    <td>Enter your name. ::</td>
+                    <td>        <input type="text" name="Name">    </td>
+                </tr>
+                <tr>
+                    <td>Enter your password. ::</td>
+                    <td>        <input type="password" name="pswd">    </td>
+                </tr>
+                <tr>
+                    <td>Enter your Address. ::</td>
+                    <td>   <textarea name="addrs" cols="20" rows="5" maxlength="100"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Gender. ::</td>
+                    <td>   <input type="radio" name="gender" value="M"> Male 
+                            <input type="radio" name="gender" value="F" checked > Female</td>
+                </tr>
+                <tr>
+                    <td>Marital Status. ::</td>
+                    <td>   <input type="checkbox" name="marital" value="married"> Married</td>
+                </tr>
+                <tr>
+                    <td>Qualification. ::</td>
+                    <td> 
+                      <select name="qlfy" >
+                             <option value="" selected> ---select---</option>    
+                             <option value="Engineer" > B.E/B.Tech </option>    
+                             <option value="Medico" > MBBS/MD </option>    
+                             <option value="Accountant" > B.Com/M.Com </option>    
+                             <option value="Arts" > B.A/M.A </option>    
+                        </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Language Known. ::</td>
+                    <td> 
+                      <select name="lang"  multiple>
+                             <option value="" selected> ---select---</option>    
+                             <option value="English" > English </option>    
+                             <option value="Hindi" > Hindi </option>    
+                             <option value="Telugu" > Telugu </option>    
+                             <option value="Marathi" > Marathi </option>    
+                        </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Hobbies. ::</td>
+                    <td> 
+                      <input type="checkbox" name="hobby" value="Reading">&nbsp;&nbsp;&nbsp;&nbsp; Reading <br>
+                      <input type="checkbox" name="hobby" value="Dancing">&nbsp;&nbsp;&nbsp;&nbsp; Dancing <br>
+                      <input type="checkbox" name="hobby" value="Watching"> &nbsp;&nbsp;&nbsp;Watching TV <br>
+                      <input type="checkbox" name="hobby" value="Playing"> Playing Cricket <br>
+                      <input type="checkbox" name="hobby" value="Roaming"> &nbsp;&nbsp;&nbsp;&nbsp;Travelling <br>
+                </td>
+                </tr>
+                <tr>
+                    <td>Dob. ::</td>
+                    <td>
+                        <input type="date" name="dob" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Time of Birth. ::</td>
+                    <td>
+                        <input type="time" name="tob" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Month of Birth. ::</td>
+                    <td>
+                        <input type="month" name="mob" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Number of week of Birth in date of birth Year. ::</td>
+                    <td>
+                        <input type="week" name="wob" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Favourite Number. ::</td>
+                    <td>
+                        <input type="range" name="fav" min="1" max="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Salary. ::</td>
+                    <td>
+                        <input type="number" name="fav" min="10000" max="1000000">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone Number. ::</td>
+                    <td>
+                        <input type="tel" name="phone" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email Id. ::</td>
+                    <td>
+                        <input type="email" name="email" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Favourite Color. ::</td>
+                    <td>
+                        <input type="color" name="color" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>FB URL. ::</td>
+                    <td>
+                        <input type="url" name="fb" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Favourite Search engine. ::</td>
+                    <td>
+                        <input type="search" name="favSearch" >
+                    </td>
+                </tr>
+                <tr>
+                    <td> <input type="submit" value="Process Details"></td>
+                    <td>
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+
+            </table>
+
+     
+    </form>
+</body>
+</html>
