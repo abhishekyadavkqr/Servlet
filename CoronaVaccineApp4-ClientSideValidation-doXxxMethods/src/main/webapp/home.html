@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CoronaVaccineCheckEligibilityApp</title>
+<script type="text/javascript"src="index.js"></script>
+</head>
+<body style="text-align:center">
+	
+		<h2 style='color:red; text-align:center;'> Corona Vaccine Application Client Side Validation</h2>
+		
+		
+	<form action="coronaurl4" method="get" onsubmit="  validate(this)" >
+	 <p> Enter the person Name :: </p> <input type="text"  name="personName">  <span id = " pNameErr" style= 'color:red'></span>
+	 <p> Enter the age :: </p> <input type="number" name="personAge">			<span id = " pAgeErr" style= 'color:red'></span>
+	 <p> Enter the address :: </p> <input type="text"  name="personAdd">	<span id = " pAddErr" style= 'color:red'></span>
+<br>	<br> <input type="submit" value="check Eligibility">
+	</form>
+	
+	
+</body>
+</html>
