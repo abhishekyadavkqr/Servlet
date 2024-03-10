@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+		<h1 style="color:red; text-align: center;">HTML  communicate to Servlet using JavaScript </h1>
+		
+		
+		<form name = "frm" action="capitalURL" method="post" style="text-align:center;font-size :2rem">
+				select the country and get the capital of this country: <select name='country' onchange="send()"  >
+																		<option value="-1" selected> ---select-value--</option>
+																		<option value="0" > INDIA</option>
+																		<option value="1" >BHUTAN</option>
+																		<option value="2" > NEPAL</option>
+																		<option value="3" > USA </option>
+																		<option value="4" > SRI LANKA</option>
+																		</select> 
+				</form>
+
+<script type="text/javascript">
+function send() {
+	frm.submit();
+	
+}
+</script>
+</body>
+</html>
