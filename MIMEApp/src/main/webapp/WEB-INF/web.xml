@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<!-- servlet configuration for HTML -->
+
+<servlet>
+<servlet-name>Html</servlet-name>
+<servlet-class>com.nt.servlet.HtmlServlet</servlet-class>
+</servlet>
+
+<!-- servlet Mapping configuration for HTML-->
+
+
+<servlet-mapping>
+<servlet-name>Html</servlet-name>
+<url-pattern>/Html.Mime.app</url-pattern>
+</servlet-mapping>
+
+
+<!-- servlet configuration for PLAIN -->
+
+<servlet>
+<servlet-name>Plain</servlet-name>
+<servlet-class>com.nt.servlet.PlainServlet</servlet-class>
+</servlet>
+
+<!-- servlet Mapping configuration for Plain-->
+
+
+<servlet-mapping>
+<servlet-name>Plain</servlet-name>
+<url-pattern>/Plain.Mime.app</url-pattern>
+</servlet-mapping>
+
+
+<!-- servlet configuration for Xml -->
+
+<servlet>
+<servlet-name>Xml</servlet-name>
+<servlet-class>com.nt.servlet.XmlServlet</servlet-class>
+</servlet>
+
+<!-- servlet Mapping configuration for Xml-->
+
+
+<servlet-mapping>
+<servlet-name>Xml</servlet-name>
+<url-pattern>/Xml.Mime.app</url-pattern>
+</servlet-mapping>
+
+
+<!-- servlet configuration for Word -->
+
+<servlet>
+<servlet-name>Word</servlet-name>
+<servlet-class>com.nt.servlet.WordServlet</servlet-class>
+</servlet>
+
+<!-- servlet Mapping configuration for WORD -->
+
+
+<servlet-mapping>
+<servlet-name>Word</servlet-name>
+<url-pattern>/Word.Mime.app</url-pattern>
+</servlet-mapping>
+
+<!-- servlet configuration for Excel -->
+
+<servlet>
+<servlet-name>Excel</servlet-name>
+<servlet-class>com.nt.servlet.ExcelServlet</servlet-class>
+</servlet>
+
+
+<!-- servlet Mapping configuration for Excel-->
+
+
+<servlet-mapping>
+<servlet-name>Excel</servlet-name>
+<url-pattern>/Excel.Mime.app</url-pattern>
+</servlet-mapping>
+</web-app>
+
+
