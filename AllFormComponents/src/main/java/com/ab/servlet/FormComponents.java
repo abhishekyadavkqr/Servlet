@@ -21,6 +21,7 @@ public class FormComponents extends HttpServlet {
 				try {
 					String pName = req.getParameter("Name");
 					pw.println(pName);
+					
 					pw.close();
 				} catch (Exception e) {
 					// TODO: handle exception
