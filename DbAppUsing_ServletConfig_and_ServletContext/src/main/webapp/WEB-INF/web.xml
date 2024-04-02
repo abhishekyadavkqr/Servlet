@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+ id="WebApp_ID" version="4.0">
+  <display-name>DbAppUsing_ServletConfig_and_ServletContext</display-name>
+  <welcome-file-list>
+    <welcome-file>Homepage.html</welcome-file>
+    
+  </welcome-file-list>
+  
+ 			 <!-- servlet configuring -->
+  <servlet>
+  <servlet-name>Studentdb</servlet-name>
+  <servlet-class>com.ab.servlet.StudentSearchApp</servlet-class>
+  <init-param>
+  <param-name>dbClass</param-name>
+  <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  </init-param>
+  
+  <init-param>
+  <param-name>dbUser</param-name>
+  <param-value>learn_jdbc</param-value>
+  </init-param>
+  <init-param>
+  <param-name>dbPassword</param-name>
+  <param-value>JDBC</param-value>
+  </init-param>
+  <init-param>
+  <param-name>dbUrl</param-name>
+  
+  <param-value>jdbc:oracle:thin:@localhost:1521:orcl</param-value>
+  </init-param>
+  </servlet>
+  
+ 				<!-- Servlet Mapping  -->
+  <servlet-mapping>
+  <servlet-name>Studentdb</servlet-name>
+  <url-pattern>/student</url-pattern> 
+  </servlet-mapping>
+</web-app>
